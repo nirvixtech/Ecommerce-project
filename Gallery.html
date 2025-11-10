@@ -1,132 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Trektales</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>About Us </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <style>
-        /* Gallery images */
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            cursor: pointer;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.7s ease;
-        }
-        .gallery img.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 8px;
-        }
-    </style>
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 border-bottom">
-        <div class="container-fluid">
-            <img src="img/logo__1_-removebg.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item"><a class="nav-link active" href="Home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
-                </ul>
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-3 border-bottom">
+            <div class="container-fluid">
+                <img src="img/logo__1_-removebg.png" alt="Logo" width="90" height="90" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="Contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="Services.html#booking">Booking</a></li>
+                                <li><a class="dropdown-item" href="Services.html#trekguide">Personal Trekguide</a></li>
+                                <li><a class="dropdown-item" href="Services.html#accommodation">Accommodation and Food</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+
+
+<section class="Gallery py-5 bg-light">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>Our <span class="text-info">Gallery</span></h1>
+            <hr class="w-25 m-auto">
         </div>
-    </nav>
-
-    <!-- Gallery Section -->
-    <section class="Gallery py-5 bg-light">
-        <div class="container">
-            <div class="text-center my-5">
-                <h1>Our <span class="text-info">Gallery</span></h1>
-                <hr class="w-25 m-auto">
-            </div>
-            <div class="gallery row g-3">
-                <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/mi.jpg" alt="Photo 1"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/m.jpg" alt="Photo 2"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/mii.jpg" alt="Photo 3"></div>
-                <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/miii.jpg" alt="Photo 4"></div>
-                <!-- Add more images as needed -->
-            </div>
+        <div class="gallery row g-3">
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/mi.jpg" alt="Photo 1"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/m.jpg" alt="Photo 2"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/mii.jpg" alt="Photo 3"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/miii.jpg" alt="Photo 4"></div>
         </div>
-    </section>
-
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <img src="" alt="Lightbox Image">
+        <div class="gallery row g-3">
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/z.jpg" alt="Photo 1"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/zz.jpg" alt="Photo 2"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/zzz.jpg" alt="Photo 3"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/zzzz.jpg" alt="Photo 4"></div>
+        </div>
+        <div class="gallery row g-3">
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/q.jpg" alt="Photo 1"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/qq.jpg" alt="Photo 2"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/qqq.jpg" alt="Photo 3"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="img/qqqq.jpg" alt="Photo 4"></div>
+        </div>
     </div>
-
+</section>
     <footer class="bg-light py-3 text-center">
         &copy; 2025 Trektales. All Rights Reserved.
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
-    <!-- JS for fade-in and lightbox -->
-    <script>
-        // Fade-in effect on scroll
-        const images = document.querySelectorAll('.gallery img');
-        window.addEventListener('scroll', () => {
-            const triggerPoint = window.innerHeight / 1.2;
-            images.forEach(img => {
-                if(img.getBoundingClientRect().top < triggerPoint){
-                    img.classList.add('visible');
-                }
-            });
-        });
-
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = lightbox.querySelector('img');
-
-        images.forEach(img => {
-            img.addEventListener('click', () => {
-                lightbox.style.display = 'flex';
-                lightboxImg.src = img.src;
-            });
-        });
-
-        lightbox.addEventListener('click', () => {
-            lightbox.style.display = 'none';
-        });
-
-        // Console message
-        window.addEventListener('load', () => {
-            console.log("Gallery page loaded! Images ready.");
-        });
-    </script>
-
 </body>
 </html>
