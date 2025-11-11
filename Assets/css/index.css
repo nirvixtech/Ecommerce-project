@@ -25,6 +25,8 @@
   color: var(--secondary-color) !important;
 }
 
+
+
 /* Buttons */
 .btn-primary {
   background-color: var(--primary-color) !important;
@@ -33,7 +35,8 @@
 }
 
 .btn-primary:hover {
-  background-color: darken(var(--primary-color), 10%) !important;
+  background-color: #13a8b3 !important;
+  /* Slightly darker shade */
   color: var(--secondary-color) !important;
 }
 
@@ -51,7 +54,7 @@
 }
 
 .social-icons a:hover {
-  color: darken(var(--primary-color), 10%) !important;
+  color: #13a8b3 !important;
 }
 
 /* Footer */
