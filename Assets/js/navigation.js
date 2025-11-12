@@ -3,11 +3,11 @@
  * Handles dropdown menu and mobile menu toggle
  */
 
-(function() {
+(function () {
   'use strict';
 
   // Initialize navigation when DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     initServicesDropdown();
     initMobileMenu();
   });
@@ -24,13 +24,13 @@
     }
 
     // Toggle dropdown on button click
-    dropdownBtn.addEventListener('click', function(e) {
+    dropdownBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       dropdownMenu.classList.toggle('hidden');
     });
 
     // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
       if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
         dropdownMenu.classList.add('hidden');
       }
@@ -48,7 +48,7 @@
       return;
     }
 
-    mobileBtn.addEventListener('click', function() {
+    mobileBtn.addEventListener('click', function () {
       mobileMenu.classList.toggle('hidden');
     });
   }
