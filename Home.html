@@ -6,22 +6,23 @@
   <title>Trektales</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/index.css">
 </head>
 <body class="bg-white text-gray-800">
 
   <!-- Navbar -->
   <nav class="bg-white shadow-md relative z-10">
     <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="Home.html" class="flex items-center text-xl font-bold text-[#17c3cf]">
+      <a href="Home.html" class="flex items-center text-xl font-bold text-primary-color">
         <img src="Assets/img/logo.png" alt="Logo" class="w-20 h-20 mr-2">
       </a>
       <div class="hidden md:flex space-x-6 items-center">
-        <a href="Home.html" class="text-gray-800 hover:text-[#17c3cf]">Home</a>
-        <a href="About.html" class="text-gray-800 hover:text-[#17c3cf]">About</a>
-        <a href="Gallery.html" class="text-gray-800 hover:text-[#17c3cf]">Gallery</a>
-        <a href="Contact.html" class="text-gray-800 hover:text-[#17c3cf]">Contact</a>
+        <a href="Home.html" class="text-gray-800 hover:text-primary-color transition-colors">Home</a>
+        <a href="About.html" class="text-gray-800 hover:text-primary-color transition-colors">About</a>
+        <a href="Gallery.html" class="text-gray-800 hover:text-primary-color transition-colors">Gallery</a>
+        <a href="Contact.html" class="text-gray-800 hover:text-primary-color transition-colors">Contact</a>
         <div class="relative">
-          <button id="servicesDropdown" class="text-gray-800 hover:text-[#17c3cf] font-medium">Services ▼</button>
+          <button id="servicesDropdown" class="text-gray-800 hover:text-primary-color font-medium transition-colors">Services ▼</button>
           <ul class="absolute hidden mt-2 w-48 bg-white border rounded shadow-md" id="dropdownMenu">
             <li><a href="Services.html#booking" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
             <li><a href="Services.html#trekguide" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
@@ -46,27 +47,14 @@
     </div>
   </nav>
 
-  <script>
-    // Services dropdown
-    const dropdownBtn = document.getElementById('servicesDropdown');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    dropdownBtn.addEventListener('click', () => dropdownMenu.classList.toggle('hidden'));
-    document.addEventListener('click', e => {
-      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) dropdownMenu.classList.add('hidden');
-    });
-
-    // Mobile menu toggle
-    const mobileBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-  </script>
+  <script src="Assets/js/navigation.js"></script>
 
   <!-- Hero Section -->
   <section class="relative">
     <img src="Assets/img/herosection.jpg" alt="Himalayas" class="w-full h-[80vh] object-cover">
     <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-4">
       <h1 class="text-3xl md:text-5xl font-bold text-white">"Trekking is not just about reaching the summit, it's about appreciating the path that leads you there."</h1>
-      <button onclick="location.href='Services.html'" class="mt-6 bg-[#17c3cf] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition duration-300">
+      <button onclick="location.href='Services.html'" class="mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">
         Book Now
       </button>
     </div>
@@ -78,7 +66,7 @@
       <img src="Assets/img/gallery12.jpg" alt="About Trektales" class="rounded-lg shadow-lg w-full">
     </div>
     <div class="md:w-1/2 space-y-6 text-center md:text-left">
-      <h2 class="text-3xl font-bold text-[#17c3cf]">We are available for your service</h2>
+      <h2 class="text-3xl font-bold text-primary-color">We are available for your service</h2>
       <p>
         Welcome to Trektales, your go-to source for trekking and adventure! Our team of passionate trekkers provides guides, booking services, and accommodation options. Whether beginner or expert, we make your journey safe and memorable.
       </p>
@@ -88,19 +76,19 @@
   <!-- Services Section -->
   <section class="max-w-7xl mx-auto px-4 py-16 grid gap-8 md:grid-cols-3">
     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-      <h3 class="text-2xl font-bold text-[#17c3cf]">Trek Booking</h3>
+      <h3 class="text-2xl font-bold text-primary-color">Trek Booking</h3>
       <p class="mt-4">Book your trek plans safely and easily. Everest Base Camp, Ghandruk Loop, Mardi Base Camp, Langtang, and Manaslu circuits.</p>
-      <a href="Booking.html" class="inline-block mt-6 bg-[#17c3cf] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition duration-300">Book Now</a>
+      <a href="Booking.html" class="inline-block mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
     </div>
     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-      <h3 class="text-2xl font-bold text-[#17c3cf]">Personal Trekguide</h3>
+      <h3 class="text-2xl font-bold text-primary-color">Personal Trekguide</h3>
       <p class="mt-4">Experienced guides with 7+ years of trekking expertise. Safety and knowledge are guaranteed.</p>
-      <a href="Booking.html" class="inline-block mt-6 bg-[#17c3cf] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition duration-300">Book Now</a>
+      <a href="Booking.html" class="inline-block mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
     </div>
     <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-      <h3 class="text-2xl font-bold text-[#17c3cf]">Accommodation & Food</h3>
+      <h3 class="text-2xl font-bold text-primary-color">Accommodation & Food</h3>
       <p class="mt-4">Comfortable hotels or camping under the stars. Food and lodging tailored to your needs.</p>
-      <a href="Booking.html" class="inline-block mt-6 bg-[#17c3cf] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition duration-300">Book Now</a>
+      <a href="Booking.html" class="inline-block mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
     </div>
   </section>
 
@@ -118,16 +106,16 @@
   <!-- Contact Section -->
   <section class="max-w-7xl mx-auto px-4 py-16">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-[#17c3cf]">Contact Us</h2>
+      <h2 class="text-3xl font-bold text-primary-color">Contact Us</h2>
     </div>
-    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for contacting us! We will get back to you soon.'); this.reset();">
+    <form class="space-y-4" id="contactForm">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input type="text" placeholder="Your Name" required class="border rounded px-4 py-2 w-full">
         <input type="email" placeholder="Your Email" required class="border rounded px-4 py-2 w-full">
       </div>
       <textarea rows="5" placeholder="Your Message" required class="border rounded px-4 py-2 w-full"></textarea>
       <div class="text-center">
-        <button type="submit" class="bg-[#17c3cf] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition duration-300">Send Message</button>
+        <button type="submit" class="bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">Send Message</button>
       </div>
       <div class="text-center mt-4 space-x-4">
         <a href="#" target="_blank"><i class="bi bi-facebook text-2xl"></i></a>
@@ -136,6 +124,8 @@
       </div>
     </form>
   </section>
+
+  <script src="Assets/js/contact.js"></script>
 
   <!-- Footer -->
   <footer class="bg-gray-100 py-6 text-center">
