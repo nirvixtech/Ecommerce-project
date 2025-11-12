@@ -1,0 +1,156 @@
+/**
+ * Main stylesheet for Trektales website
+ * Uses CSS variables for maintainability
+ */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #17c3cf;
+  --primary-hover: #13a8b3;
+  --primary-dark: #0f7a82;
+  
+  /* Secondary Colors */
+  --secondary-color: #ffffff;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  
+  /* Background Colors */
+  --bg-white: #ffffff;
+  --bg-gray-light: #f9fafb;
+  --bg-gray: #f3f4f6;
+  
+  /* Border Colors */
+  --border-color: #e5e7eb;
+  --border-focus: var(--primary-color);
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-base: 300ms;
+  --transition-slow: 500ms;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes - Compatible with Tailwind */
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.border-primary-color {
+  border-color: var(--primary-color);
+}
+
+.hover\:text-primary-color:hover {
+  color: var(--primary-color);
+}
+
+.hover\:bg-primary-hover:hover {
+  background-color: var(--primary-hover);
+}
+
+.focus\:ring-primary-color:focus {
+  --tw-ring-color: var(--primary-color);
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+  color: var(--primary-color);
+  transition: color var(--transition-base) ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Dropdown Styles */
+.navbar-nav .dropdown-item {
+  color: var(--primary-color);
+  transition: background-color var(--transition-base) ease, color var(--transition-base) ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--secondary-color);
+  transition: background-color var(--transition-base) ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  color: var(--secondary-color);
+}
+
+.btn-primary:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Section Headings */
+.about h1,
+.services h1,
+.contact h1,
+.gallery h1 {
+  color: var(--primary-color);
+}
+
+/* Social Icons */
+.social-icons a {
+  color: var(--primary-color);
+  transition: color var(--transition-base) ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-hover);
+}
+
+/* Footer */
+footer {
+  color: var(--primary-color);
+}
+
+/* Form Input Focus Styles */
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  border-color: var(--border-focus);
+}
+
+/* Custom Scrollbar (optional enhancement) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-gray-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-hover);
+}

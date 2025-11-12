@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Trektales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/index.css">
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md relative z-10">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="Home.html" class="flex items-center text-xl font-bold text-primary-color">
+        <img src="Assets/img/logo.png" alt="Logo" class="w-20 h-20 mr-2">
+      </a>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="Home.html" class="text-gray-800 hover:text-primary-color transition-colors">Home</a>
+        <a href="About.html" class="text-gray-800 hover:text-primary-color transition-colors">About</a>
+        <a href="Gallery.html" class="text-gray-800 hover:text-primary-color transition-colors">Gallery</a>
+        <a href="Contact.html" class="text-gray-800 hover:text-primary-color transition-colors">Contact</a>
+        <div class="relative">
+          <button id="servicesDropdown" class="text-gray-800 hover:text-primary-color font-medium transition-colors">Services ▼</button>
+          <ul class="absolute hidden mt-2 w-48 bg-white border rounded shadow-md" id="dropdownMenu">
+            <li><a href="#booking" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
+            <li><a href="#trekguide" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
+            <li><a href="#accommodation" class="block px-4 py-2 hover:bg-gray-100">Accommodation & Food</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" class="text-gray-800">
+          <i class="bi bi-list text-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4">
+      <a href="Home.html" class="block py-2">Home</a>
+      <a href="About.html" class="block py-2">About</a>
+      <a href="Gallery.html" class="block py-2">Gallery</a>
+      <a href="Contact.html" class="block py-2">Contact</a>
+      <a href="#booking" class="block py-2">Booking</a>
+      <a href="#trekguide" class="block py-2">Personal Trekguide</a>
+      <a href="#accommodation" class="block py-2">Accommodation & Food</a>
+    </div>
+  </nav>
+
+  <script src="Assets/js/navigation.js"></script>
+
+  <!-- Header Section -->
+  <section class="text-center py-16">
+    <div class="max-w-2xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold">Our <span class="text-primary-color">Services</span></h1>
+      <hr class="w-24 border-t-4 border-primary-color mx-auto my-4">
+      <p class="text-lg md:text-xl mt-2">
+        Explore the trekking and adventure services we offer. Your safe and memorable journey starts here.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white border shadow rounded p-6 text-center">
+      <h2 class="text-xl font-semibold text-primary-color mb-3">Trek Booking</h2>
+      <p class="text-gray-700 mb-4">
+        Book your trek plans safely and easily. Everest Base Camp, Ghandruk Loop, Mardi Base Camp, Langtang, Manaslu circuits.
+      </p>
+      <a href="Booking.html" class="inline-block bg-primary-color text-white px-6 py-2 rounded hover:opacity-90 transition">Book Now</a>
+    </div>
+
+    <div class="bg-white border shadow rounded p-6 text-center">
+      <h2 class="text-xl font-semibold text-primary-color mb-3">Personal Trekguide</h2>
+      <p class="text-gray-700 mb-4">
+        Experienced guides with 7+ years of trekking expertise. Safety and knowledge are guaranteed.
+      </p>
+      <a href="Booking.html" class="inline-block bg-primary-color text-white px-6 py-2 rounded hover:opacity-90 transition">Book Now</a>
+    </div>
+
+    <div class="bg-white border shadow rounded p-6 text-center">
+      <h2 class="text-xl font-semibold text-primary-color mb-3">Accommodation & Food</h2>
+      <p class="text-gray-700 mb-4">
+        Comfortable hotels or camping under the stars. Food and lodging tailored to your needs.
+      </p>
+      <a href="Booking.html" class="inline-block bg-primary-color text-white px-6 py-2 rounded hover:opacity-90 transition">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-50 py-6 text-center">
+    <p class="text-gray-600">&copy; 2025 Trektales. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
