@@ -1,56 +1,60 @@
-/**
- * Navigation functionality for Trektales website
- * Handles dropdown menu and mobile menu toggle
- */
-
 (function () {
   'use strict';
 
-  // Initialize navigation when DOM is ready
   document.addEventListener('DOMContentLoaded', function () {
-    initServicesDropdown();
-    initMobileMenu();
+    loadHeader();
+    loadFooter();
   });
 
-  /**
-   * Initialize services dropdown functionality
-   */
+  function loadHeader() {
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        const headerContainer = document.getElementById("header");
+        if (headerContainer) {
+          headerContainer.innerHTML = data;
+          initServicesDropdown();
+          initMobileMenu();
+        }
+      })
+      .catch(err => console.error("Error loading header:", err));
+  }
+
+  function loadFooter() {
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        const footerContainer = document.getElementById("footer");
+        if (footerContainer) footerContainer.innerHTML = data;
+      })
+      .catch(err => console.error("Error loading footer:", err));
+  }
+
   function initServicesDropdown() {
-    const dropdownBtn = document.getElementById('servicesDropdown');
-    const dropdownMenu = document.getElementById('dropdownMenu');
+    const btn = document.getElementById('servicesDropdown');
+    const menu = document.getElementById('dropdownMenu');
+    if (!btn || !menu) return;
 
-    if (!dropdownBtn || !dropdownMenu) {
-      return;
-    }
-
-    // Toggle dropdown on button click
-    dropdownBtn.addEventListener('click', function (e) {
+    btn.addEventListener('click', e => {
       e.stopPropagation();
-      dropdownMenu.classList.toggle('hidden');
+      menu.classList.toggle('hidden');
     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function (e) {
-      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-        dropdownMenu.classList.add('hidden');
+    document.addEventListener('click', e => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
       }
     });
   }
 
-  /**
-   * Initialize mobile menu functionality
-   */
   function initMobileMenu() {
-    const mobileBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (!btn || !menu) return;
 
-    if (!mobileBtn || !mobileMenu) {
-      return;
-    }
-
-    mobileBtn.addEventListener('click', function () {
-      mobileMenu.classList.toggle('hidden');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
     });
   }
-})();
 
+})();

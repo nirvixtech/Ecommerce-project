@@ -9,49 +9,8 @@
   <link rel="stylesheet" href="Assets/css/index.css">
 </head>
 <body class="bg-white text-gray-800">
-
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md relative z-10">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="Home.html" class="flex items-center text-xl font-bold text-primary-color">
-        <img src="Assets/img/logo.png" alt="Logo" class="w-20 h-20 mr-2">
-      </a>
-      <div class="hidden md:flex space-x-6 items-center">
-        <a href="Home.html" class="text-gray-800 hover:text-primary-color transition-colors">Home</a>
-        <a href="About.html" class="text-gray-800 hover:text-primary-color transition-colors">About</a>
-        <a href="Gallery.html" class="text-gray-800 hover:text-primary-color transition-colors">Gallery</a>
-        <a href="Contact.html" class="text-gray-800 hover:text-primary-color transition-colors">Contact</a>
-        <div class="relative">
-          <button id="servicesDropdown" class="text-gray-800 hover:text-primary-color font-medium transition-colors">Services ▼</button>
-          <ul class="absolute hidden mt-2 w-48 bg-white border rounded shadow-md" id="dropdownMenu">
-            <li><a href="Services.html#booking" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
-            <li><a href="Services.html#trekguide" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
-            <li><a href="Services.html#accommodation" class="block px-4 py-2 hover:bg-gray-100">Accommodation and Food</a></li>
-          </ul>
-        </div>
-        <a href="Services.html" class="bg-primary-color text-white px-5 py-2 rounded-lg hover:opacity-90 transition duration-300 font-medium">
-          Book Now
-        </a>
-      </div>
-      <div class="md:hidden">
-        <button id="mobileMenuBtn" class="text-gray-800">
-          <i class="bi bi-list text-2xl"></i>
-        </button>
-      </div>
-    </div>
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4">
-      <a href="Home.html" class="block py-2">Home</a>
-      <a href="About.html" class="block py-2">About</a>
-      <a href="Gallery.html" class="block py-2">Gallery</a>
-      <a href="Contact.html" class="block py-2">Contact</a>
-      <a href="Services.html#booking" class="block py-2">Booking</a>
-      <a href="Services.html#trekguide" class="block py-2">Personal Trekguide</a>
-      <a href="Services.html#accommodation" class="block py-2">Accommodation & Food</a>
-      <a href="Services.html" class="block mt-2 bg-primary-color text-white text-center px-4 py-2 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
-    </div>
-  </nav>
-
-  <script src="Assets/js/navigation.js"></script>
+  <div id="header"></div>
+ <script src="Assets/js/navigation.js"></script>
 
   <!-- Hero Section -->
   <section class="text-center py-16 bg-gray-50">
@@ -63,13 +22,8 @@
       </p>
     </div>
   </section>
-
-  <!-- About Content Section -->
   <section class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    <!-- Image -->
     <img src="Assets/img/gallery12.jpg" class="w-full h-auto max-h-96 object-cover rounded-lg shadow-md" alt="Trekking Adventure">
-
-    <!-- Text Content -->
     <div>
       <h2 class="text-2xl md:text-3xl font-bold text-primary-color mb-4">We Are Available For Your Service</h2>
       <p class="text-gray-700 mb-4 leading-relaxed">
@@ -80,11 +34,5 @@
       </p>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-50 py-6 text-center">
-    <p class="text-gray-600">&copy; 2025 Trektales. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
+<div id="footer"></div>
+<script src="Assets/js/footer.js"></script>
