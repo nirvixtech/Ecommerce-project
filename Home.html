@@ -24,11 +24,14 @@
         <div class="relative">
           <button id="servicesDropdown" class="text-gray-800 hover:text-primary-color font-medium transition-colors">Services ▼</button>
           <ul class="absolute hidden mt-2 w-48 bg-white border rounded shadow-md" id="dropdownMenu">
-            <li><a href="Services.html#booking.html" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
-            <li><a href="Services.html#trekguide.html" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
-            <li><a href="Services.html#accommodation.html" class="block px-4 py-2 hover:bg-gray-100">Accommodation and Food</a></li>
+            <li><a href="Services.html#booking" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
+            <li><a href="Services.html#trekguide" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
+            <li><a href="Services.html#accommodation" class="block px-4 py-2 hover:bg-gray-100">Accommodation and Food</a></li>
           </ul>
         </div>
+        <a href="Services.html" class="bg-primary-color text-white px-5 py-2 rounded-lg hover:opacity-90 transition duration-300 font-medium">
+          Book Now
+        </a>
       </div>
       <div class="md:hidden">
         <button id="mobileMenuBtn" class="text-gray-800">
@@ -44,22 +47,22 @@
       <a href="Services.html#booking" class="block py-2">Booking</a>
       <a href="Services.html#trekguide" class="block py-2">Personal Trekguide</a>
       <a href="Services.html#accommodation" class="block py-2">Accommodation & Food</a>
+      <a href="Services.html" class="block mt-2 bg-primary-color text-white text-center px-4 py-2 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
     </div>
   </nav>
 
   <script src="Assets/js/navigation.js"></script>
-
-  <!-- Hero Section -->
   <section class="relative">
     <img src="Assets/img/herosection.jpg" alt="Himalayas" class="w-full h-[80vh] object-cover">
     <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-4">
       <h1 class="text-3xl md:text-5xl font-bold text-primary-color">"Wander often, wonder always"</h1>
       <button onclick="location.href='Services.html'" class="mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">
-        Book Now
+        Explore now
       </button>
     </div>
   </section>
 
+  <!-- About Section -->
   <section class="text-center py-16 bg-gray-50">
     <div class="max-w-2xl mx-auto">
       <h1 class="text-4xl md:text-5xl font-bold">About <span class="text-primary-color">Us</span></h1>
@@ -69,8 +72,6 @@
       </p>
     </div>
   </section>
-
-  <!-- About Content Section -->
   <section class="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
     <img src="Assets/img/gallery12.jpg" class="w-full h-auto max-h-96 object-cover rounded-lg shadow-md" alt="Trekking Adventure">
     <div>
@@ -102,33 +103,34 @@
       <a href="Booking.html" class="inline-block mt-6 bg-primary-color text-white px-6 py-3 rounded-lg hover:opacity-90 transition duration-300">Book Now</a>
     </div>
   </section>
+
   <!-- Gallery Section -->
-<section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery4.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 1">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery3.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 2">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery10.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 3">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery9.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 4">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery8.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 5">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery13.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 6">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery11.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 7">
-  </div>
-  <div class="overflow-hidden rounded-lg shadow">
-    <img src="Assets/img/gallery7.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 8">
-  </div>
-</section>
+  <section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery4.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 1">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery3.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 2">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery10.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 3">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery9.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 4">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery8.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 5">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery13.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 6">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery11.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 7">
+    </div>
+    <div class="overflow-hidden rounded-lg shadow">
+      <img src="Assets/img/gallery7.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 8">
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section class="max-w-7xl mx-auto px-4 py-16">
