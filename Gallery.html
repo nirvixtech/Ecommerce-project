@@ -9,44 +9,7 @@
   <link rel="stylesheet" href="Assets/css/index.css">
 </head>
 <body class="bg-white text-gray-800">
-
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md relative z-10">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="Home.html" class="flex items-center text-xl font-bold text-primary-color">
-        <img src="Assets/img/logo.png" alt="Logo" class="w-20 h-20 mr-2">
-      </a>
-      <div class="hidden md:flex space-x-6 items-center">
-        <a href="Home.html" class="text-gray-800 hover:text-primary-color transition-colors">Home</a>
-        <a href="About.html" class="text-gray-800 hover:text-primary-color transition-colors">About</a>
-        <a href="Gallery.html" class="text-gray-800 hover:text-primary-color transition-colors">Gallery</a>
-        <a href="Contact.html" class="text-gray-800 hover:text-primary-color transition-colors">Contact</a>
-        <div class="relative">
-          <button id="servicesDropdown" class="text-gray-800 hover:text-primary-color font-medium transition-colors">Services ▼</button>
-          <ul class="absolute hidden mt-2 w-48 bg-white border rounded shadow-md" id="dropdownMenu">
-            <li><a href="Services.html#booking" class="block px-4 py-2 hover:bg-gray-100">Booking</a></li>
-            <li><a href="Services.html#trekguide" class="block px-4 py-2 hover:bg-gray-100">Personal Trekguide</a></li>
-            <li><a href="Services.html#accommodation" class="block px-4 py-2 hover:bg-gray-100">Accommodation & Food</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="md:hidden">
-        <button id="mobileMenuBtn" class="text-gray-800">
-          <i class="bi bi-list text-2xl"></i>
-        </button>
-      </div>
-    </div>
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-4">
-      <a href="Home.html" class="block py-2">Home</a>
-      <a href="About.html" class="block py-2">About</a>
-      <a href="Gallery.html" class="block py-2">Gallery</a>
-      <a href="Contact.html" class="block py-2">Contact</a>
-      <a href="Services.html#booking" class="block py-2">Booking</a>
-      <a href="Services.html#trekguide" class="block py-2">Personal Trekguide</a>
-      <a href="Services.html#accommodation" class="block py-2">Accommodation & Food</a>
-    </div>
-  </nav>
-
+<div id="header"></div>
   <script src="Assets/js/navigation.js"></script>
 
   <!-- Hero Section -->
@@ -59,23 +22,33 @@
       </p>
     </div>
   </section>
-
   <!-- Gallery Section -->
-  <section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <img src="Assets/img/gallery4.jpg" class="w-full rounded-lg shadow" alt="Photo 1">
-    <img src="Assets/img/gallery3.jpg" class="w-full rounded-lg shadow" alt="Photo 2">
-    <img src="Assets/img/gallery10.jpg" class="w-full rounded-lg shadow" alt="Photo 3">
-    <img src="Assets/img/gallery9.jpg" class="w-full rounded-lg shadow" alt="Photo 4">
-    <img src="Assets/img/gallery8.jpg" class="w-full rounded-lg shadow" alt="Photo 5">
-    <img src="Assets/img/gallery13.jpg" class="w-full rounded-lg shadow" alt="Photo 6">
-    <img src="Assets/img/gallery11.jpg" class="w-full rounded-lg shadow" alt="Photo 7">
-    <img src="Assets/img/gallery7.jpg" class="w-full rounded-lg shadow" alt="Photo 8">
-  </section>
+<section class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery4.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 1">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery3.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 2">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery10.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 3">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery9.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 4">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery8.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 5">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery13.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 6">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery11.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 7">
+  </div>
+  <div class="overflow-hidden rounded-lg shadow">
+    <img src="Assets/img/gallery7.jpg" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" alt="Photo 8">
+  </div>
+</section>
+<div id="footer"></div>
+<script src="Assets/js/footer.js"></script>
 
-  <!-- Footer -->
-  <footer class="bg-gray-50 py-6 text-center">
-    <p class="text-gray-600">&copy; 2025 Trektales. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
