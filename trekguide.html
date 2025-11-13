@@ -9,10 +9,9 @@
   <link rel="stylesheet" href="Assets/css/index.css">
 </head>
 <body class="bg-white text-gray-800">
-<div id="header"></div>
- <script src="js/navigation.js"></script>
-
   <!-- Header -->
+  <div id="header"></div>
+  <script src="js/navigation.js"></script>
   <section class="text-center py-16 bg-gray-50">
     <h1 class="text-4xl md:text-5xl font-bold">
       Book Your <span class="text-primary-color">Trek Guide</span>
@@ -23,17 +22,23 @@
     <div class="bg-white shadow-md rounded-lg p-4 text-center">
       <h3 class="text-xl font-semibold">Apsu Siwakoti</h3>
       <p class="text-gray-600 mt-1">10+ years of experience | English, Nepali</p>
-      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition" data-guide="Karma Sherpa">Book This Guide</button>
+      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition">
+        Book This Guide
+      </button>
     </div>
     <div class="bg-white shadow-md rounded-lg p-4 text-center">
       <h3 class="text-xl font-semibold">Aayush Siwakoti</h3>
       <p class="text-gray-600 mt-1">7+ years of experience | Nepali, Hindi</p>
-      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition" data-guide="Pemba Tamang">Book This Guide</button>
+      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition">
+        Book This Guide
+      </button>
     </div>
     <div class="bg-white shadow-md rounded-lg p-4 text-center">
       <h3 class="text-xl font-semibold">Sowtantra Nepal</h3>
       <p class="text-gray-600 mt-1">5+ years of experience | English, French</p>
-      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition" data-guide="Maya Gurung">Book This Guide</button>
+      <button class="book-guide-btn mt-4 bg-primary-color text-white px-4 py-2 rounded hover:opacity-90 transition">
+        Book This Guide
+      </button>
     </div>
   </section>
 
@@ -43,9 +48,13 @@
 
     <form class="space-y-4 bg-white p-6 rounded-lg shadow-md">
       <div>
-        <label class="block text-gray-700 mb-1">Selected Guide</label>
-        <input type="text" id="selectedGuide" readonly
-          class="w-full border rounded px-3 py-2 bg-gray-100 focus:outline-none">
+        <label class="block text-gray-700 mb-1">Select Guide</label>
+        <select id="selectedGuide" class="w-full border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-color">
+          <option value="" disabled selected>Choose the guide</option>
+          <option value="Apsu Siwakoti">Apsu Siwakoti</option>
+          <option value="Aayush Siwakoti">Aayush Siwakoti</option>
+          <option value="Sowtantra Nepal">Sowtantra Nepal</option>
+        </select>
       </div>
       <div>
         <label class="block text-gray-700 mb-1">Full Name</label>
@@ -67,9 +76,11 @@
       </div>
     </form>
   </section>
-<div id="footer"></div>
-<script src="Assets/js/footer.js"></script>
 
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script src="Assets/js/footer.js"></script>
   <script src="Assets/js/trekguide.js"></script>
+
 </body>
 </html>
