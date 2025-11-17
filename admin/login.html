@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Trektales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <h2 class="text-2xl font-semibold text-center text-[#17c3cf] mb-6">Admin Login</h2>
+
+    <form action="admindashboard.html" method="POST" class="space-y-5">
+      <!-- Email -->
+      <div class="flex flex-col">
+        <label for="email" class="mb-2 font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="admin@example.com" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#17c3cf] focus:border-transparent">
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col relative">
+        <label for="password" class="mb-2 font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" placeholder="********" required
+               class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#17c3cf] focus:border-transparent">
+        <span id="togglePassword" class="absolute right-3 top-10 text-[#17c3cf] cursor-pointer text-sm">Show</span>
+      </div>
+
+      <!-- Login Button -->
+      <div>
+        <button type="submit" 
+                class="w-full bg-[#17c3cf] text-white py-2 rounded hover:opacity-90 transition duration-300">
+          Login
+        </button>
+      </div>
+    </form>
+ <script src="admin/script.js"></script>
+</body>
+</html>
